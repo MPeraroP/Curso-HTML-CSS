@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{ 
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            /*short hand da borda segue a determinada ordem
+            border-width: 
+            border-style:
+            border-color:
+            */
+            border: 10px solid salmon;
+
+            /*Para configurar o padding, siga o sentido horario, top, right, bottom e left
+            padding-top: 
+            padding-right: 
+            padding-bottom: 
+            padding-left: 
+            e sua sjort hand segue a mesma ordem 
+            Um valor: todos iguais
+            Dois valores: fica igual em cima e embaixo e dos lados
+            Quatro valores: todos os lados individualmente*/
+
+            padding: 10px;
+            /*margin segue o esmo conceito do padding
+            margin-top: 
+            margin-right: 
+            margin-bottom: 
+            margin-left: 
+            ps: para centralizar a box usando margin, utilizar auto*/
+           
+            margin: 20px auto 40px auto;
+
+            /*mesmo conceiito da borda
+            outline-width:
+            outline-style: 
+            outline-color: */
+            outline: 10px solid black;
+
+       
+        }
+
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-top-color: blue;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paráfragos também são exemplos de box-level, mas os <a href="#">links, são exemplo de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>

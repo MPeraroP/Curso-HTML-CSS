@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu prorpio servidor</p>
+    <p>o metodo é igual a como se coloca um audio, mundando apenas o comandoe de audio para video</p>
+    <p>tem a maneira simples </p>
+    video src="Nova pasta/video.mp4.mp4" width="500px" controls>video
+    <p>a maneira ''certar''</p>
+    <video width="560px" poster="imagens/montanha.avif" controls loop>
+        <source src="Nova pasta/video.mp4.mp4" type="video/mp4">
+        <source src="Nova pasta/video.web.webm" type="video/webm">
+        <source src="Nova pasta/video.mp42.mp4" type="video/mp4">
+    </video>
+    <p>hospedar os videos nos proprios sites pode ser ruim, pois aumenta o consumo de banda e pode ficar caro para o cliente </p>
+
+    <h1>Inserindo Videos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=zr5h5XYdl8oPEkQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <p>pode ser usado também outros sites para hospedagem de videos, como o vimeo por exemplo, que te permite colocar videos em seu site e não deixa-lo publico para qualquer um assistir </p>
+    <p>para adicionar um video pelo vimeo é do mesmo modo do que pelo youtube, porem você pode personalizar mais</p>
+
+    <iframe src="https://player.vimeo.com/video/29315013?h=4a7399cc6d&loop=1&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

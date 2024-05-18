@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../../../Documents/PROJETOSFILIX/PROJETO3/html-css/exerciciosF"
+		}
+	],
+	"settings": {
+		"files.autoSave": "afterDelay",
+		"explorer.compactFolders": false,
+		"workbench.editor.enablePreview": false,
+		"workbench.iconTheme": "material-icon-theme",
+		"workbench.colorTheme": "Dracula",
+		"terminal.integrated.fontSize": 16,
+		"terminal.integrated.profiles.windows": {
+			"Git Bash": {
+				"source": "Git Bash"
+			}
+		},
+		"terminal.integrated.defaultProfile.windows": "Git Bash",
+		"liveServer.settings.multiRootWorkspaceName": "exerciciosF"
+	}
+}

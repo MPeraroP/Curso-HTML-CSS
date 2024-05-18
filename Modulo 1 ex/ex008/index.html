@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+    <style> 
+        mark {background-color: red; 
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Existem duas maneiradas de colocar Negrito, uma maneira semantica e uma não semantica</p>
+    <p>Nessa fraze tem ma <b>termo em negrito </b> utilizando a tag &lt;b&gt; (não semantica)</p>
+    <p>Nesta fraze tem um <strong>termo em Destaque</strong> utilizando a tag &lt;strong&gt; (forma semantica) </p>
+    <p>Nesta fraze temos um <i>termo em italico</i> utilizando a tag &lt;i&gt; (não semantica)</p>
+    <p>Nesta fraze temos um <em>termo em ênfase</em> utilizando a tag &lt;em&gt; (forma semantica) </p>
+    
+    <p><strong>Recomendação da W3C: é forma CSS é sentido HTML</strong></p>
+    <br>
+    <h2>Texto Marcado</h2>
+    <p> Podemos criar também um <mark>texto marcado</mark> utilizando a tag &lt;mark&gt;(forma semantica)</p>
+    <p>Obs: para mudar a cor do marcador é necesario utilizar CSS, o exemplo usado nesta página o style é colocado dentro da <strong>head</strong> e isso faz com que todos os <strong>mark</strong> da pagina fiquem dessa cor, porem se colocado dentro do mark <mark style="background-color: blue;">texto marcado</mark>, como feito no exemplo anterior ele mudara a forma somente deste. </p>
+    <h2>Testo grande e pequeno</h2>
+    <p>Estamos criando um <big>Texto Grande</big> e um <small>texto pequeno</small> nesse parágrafo utilizando as tags &lt;big&gt; para a grande e a &lt;small&gt; para a pequena
+   <br> Obs: a tag &lt;big&gt; pode ter seu uso desatifado por ser considerado uma tag obsoleta, ficar atento quanto a isso, para deixar a letra grande utilizar o <strong>CSS</strong></p>
+    
+    <h2>Texto deletato</h2>
+    <p>Podemos marcar <del>um texto como deletado</del> para indicar que ele deve ser lido mas não considerado utilizando a tag &lt;del&gt;</p>
+    <h2>Texto inserido</h2>
+    <P>Podemos marcar <ins>um texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois utilizando a tag &lt;ins&gt;</P>
+    <p>existe também o <u>sublinhado</u> utilizando a tag &lt;u&gt; porem ela pode cair em desuso (não semantica) </p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3 utiliza-se a tag &lt;sup&gt; na parte desejada</p>
+    <h2>texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O utiliza-se a tag &lt;sub&gt; na parte desejada</p>
+
+
+</body>
+</html>

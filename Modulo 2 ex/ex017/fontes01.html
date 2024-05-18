@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        
+        
+        body { font-family: Arial, Helvetica, sans-serif;
+            /* 
+            Medidas absolutas
+            cm (centimetro), ml (milimetro), in (polegada), px (pixel), pt (ponto), pc (paica)
+            
+
+            Medidas relativas
+            em (medida relatia ao tamanho natural da fonte), ex (medida relativa a altura X), rem(realativo a fonte que esta configurada no body), vw (viwe width, largura da viwe port, tamanho da tela em %), vh (viwe high, altura da viwe port), %
+            16px geralmente = 1em 
+            em e px são as recomendações da W3C*/
+
+            font-size: 16px;
+
+            /*Utilizado para mudança de peso da fonte (udar o negrito da palava)
+            pode se utilixar numeração de 100 a 900(de 100 em 100) 
+            ou as palavras lighter, normal, bold e bolder (cada uma tem um peso diferente), nem toda fonte vai ter todas as variações  
+
+            font-weight: normal ;
+
+            para colocar em italico
+            font-style: italic; 
+
+            para sublinhar e outros 
+            text-decoration: underline;*/
+        h1 {
+            /* shorhand font 
+            Ao invez de utilizar 4 linhas
+
+            font-style: italic; 
+            font-weight: normal
+            font-size: 16px; 
+            font-family:
+
+            Utilizamos uma shorthand seguindo a seguinte ordem: style, weight, size e family
+            ;*/
+            font: italic normal 3em 'Work Sans', sans-serif;
+        }
+        h2 { font: bold 2em 'Work Sans', sans-serif}
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint possimus magnam maxime fugiat dolores consequuntur, provident porro a eum ut. Eveniet sapiente tempore minus, animi vel quidem cum blanditiis. Optio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem perferendis architecto corporis sapiente vero mollitia eligendi nihil voluptates placeat dolorum eius doloribus id suscipit quasi, natus debitis quam magni repellendus!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo animi tempore eius fuga rerum optio alias, voluptate a unde nulla veniam voluptatem id. Laudantium, voluptatum deleniti. Laboriosam, quam dolorum! Ex. lo</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam saepe, officiis distinctio cum sint fugit, enim mollitia officia eius maxime modi voluptatibus temporibus quod ad magni quibusdam commodi quaerat sed!</p>
+</body>
+</html>

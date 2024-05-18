@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML 5</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <H1>Imagens Dinamicas</H1>
+    <p>Tente abrir esse site em varios dispositivos difeerentes ou simplismente aumente e diminua o tamanho do seu navegador </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto g">
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>maneira simples de reproduzir um áudio em HTML5</p>
+    <audio src="midia/mozart.mp3" controls > </audio>
+    <p>um outro metodo é utilizando o exemplo abaixo</p>
+    <audio>
+        <source src="midia/mozart.mp3" type="audio/mpeg" > 
+        <source src="midia/mozart.ogg" type="audio/ogg">
+        <source src="midia/mozart.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/mozart.mp3"> Clique aqui para baixar o arquivo MP3</a> </p>
+    </audio>
+    <p>atentar-se para colocar os aúdios em prioridade, que caso for utilizar esse metodo, terei que providenciar os arquivos de áudio dos respectivos formatos e evitar utilizar o formato WAV pois ele é muito grande </p>
+</body>
+</html>
