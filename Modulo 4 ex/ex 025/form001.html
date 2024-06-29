@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulá rios</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <p><label for="iNome">Nome:</label> 
+            <input type="text" name="Nome" id="iNome"></p>
+        <P><label for="iSobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="iSobrenome"></P>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
+
+
+<!--
+Existem dois metodos para envio de formulario em html
+O primeiro é esse que estamos utrilizando
+que é o (GET), que é o metodo padrão, deixa aparecer os dados de seu formulario no URL
+
+Já o metodo (POST) não permite que os dados apareçam no URL, mas caso a pessoa tenha um conhecimento, ela pode consultar esses daos através do inspecionar da página
+
+Recomenda-se utilizar o metodo (Get) quando não for pedir dados senciveis, como nome, sobrenome e outros e ter um formulario com o metodo Get, permite que a URl seja compartilhada, como é o caso do Google
+
+ATENÇÃO:
+Quando se envia dados pelo (GET) você só pode enviar até 3000 bits (3000letras) de informação, ultrapassar esse volume deve se utilizar outro metodo, não se pode utilizar get quando for para enviar fotos e dados senciveis
+
+Já o metodo (Post), por mais que não seja 100% seguro, recomenda-se utilizar quando for pedir dados senciveis, como senhas ou numero do cartão e outros 
+
+APRENDER SOBRE HTTPS NO FUTURO PARA ENTENDER MELHOR SOBRE ENVIO DE DADOS 
+
+
+-->
