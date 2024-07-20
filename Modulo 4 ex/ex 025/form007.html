@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+
 <body>
     <h1>Fornmulários</h1>
-    
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="Estado" id="iest">
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AP">Amapá</option>
+
+                </optgroup>
+                <optgroup label="Centro-Oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="MG">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+            </select>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option>Professor</option>
+                <option>Desenvolvedor</option>
+                <option>Contabilista</option>
+
+            </datalist>
+            <!--quando se coloca o valor ele aparece na lista, quando não se coloca valor ele só aparece a profissão-->
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
